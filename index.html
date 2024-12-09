@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CET</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/e6b202147e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script type="module">
+        // Redirect the first VIDA button to the calculator page
+ document.getElementById('vida-button-1').addEventListener('click', () => {
+    window.location.href = '/tech.html'; // Redirect to the calculator page
+ });
+ document.getElementById('vida-button-2').addEventListener('click', () => {
+    window.location.href = '/KnowVehicle.html';
+});
+    </script>
+    <nav class="navbar">
+        <div class="navbar__container"> 
+            <a href="/" id="navbar__logo">
+                <img src="images/CET 2.svg" alt="CET Logo" style="height: 80px;">
+            </a>   
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Calculator</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/KnowVehicle.html" class="navbar__links">Know Your Car</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="login.html" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>CARBON EMISSION</h1>
+                <h2>TRACKER</h2>
+                <p>Towards a conscious world</p>
+                <button class="main__btn"><a href="/tech.html">Aprender De Por Vida</a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="images/CET 2.svg" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <h1>Know The Impact</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>For The Planet</h2>
+                <p>Check Now</p>
+                <button id="vida-button-1">VIDA</button>
+            </div>
+            <div class="services__card">
+                <h2>Know Your Car</h2>
+                <p>Take The Leap</p>
+                <button id="vida-button-2">VIDA</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>WHAT IS CET?</h2>
+                    <a href="/">-> We help you track your emissions</a>
+                    <a href="/">-> Make you aware about your impact</a>
+                    <a href="/">-> Help you deal with daily activities</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>CALCULATOR</h2>
+                    <a href="/">-> Emission through daily activities</a>
+                    <a href="/">-> Lets you add new activities</a>
+                    <a href="/">-> Accurate calculation</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>KNOW YOUR CAR</h2>
+                    <a href="/">-> Tell you the impact due to your car</a>
+                    <a href="/">-> Uses the PUC certificate</a>
+                    <a href="/">-> The next leap forward</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>THE TEAM</h2>
+                    <a href="/">Cadet Akshay </a>
+                    <a href="/">Cadet Abhishika</a>
+                    <a href="/">Cadet Anshu </a>
+                    <a href="/">Cadet Aman</a>
+                </div>
+            </div> 
+        </div>
+        <div class="social__media">
+            <div class="social_media_wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">
+                        <img src="images/CET 2.svg" alt="CET Logo" style="height: 80px;">
+                    </a>
+                </div>
+                <p class="website__right">☘CET 2024.</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+ </body>
+</html>

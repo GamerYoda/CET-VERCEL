@@ -2,7 +2,7 @@ document.getElementById('emissionForm').addEventListener('submit', function(even
     event.preventDefault();
 
     const transportMiles = parseFloat(document.getElementById('transport').value);
-    const foodMeals = parseFloat(document.getElementById('food').value);
+    const foodMeals = parseFloat(document.getElementById('food').value) || 0; // Default to 0 if empty
     const extraActivities = document.getElementById('extra').value;
 
     // Simple emission factors (in kg CO2)
@@ -18,9 +18,7 @@ document.getElementById('emissionForm').addEventListener('submit', function(even
         'Vegetarian': 1.5, // kg CO2 per meal (vegetarian)
         'Waste': 0.1, // kg CO2 per kg of waste
         'HomeHeating': 2.5, // kg CO2 per hour of heating (oil/gas)
-        'Gasoline': 2.31, // kg CO2 per liter of gasoline
-        'NaturalGas': 2.75, // kg CO2 per therm of natural gas
-        'CoalElectricity': 0.9 // kg CO2 per kWh from coal
+        'Gasoline': 2.31 // kg CO2 per liter of gasoline
     };
 
     // Calculate emissions
@@ -29,8 +27,6 @@ document.getElementById('emissionForm').addEventListener('submit', function(even
     // Add predefined activities to total emissions
     totalEmissions += (document.getElementById('homeHeating').value || 0) * activityEmissionFactors['HomeHeating'];
     totalEmissions += (document.getElementById('gasoline').value || 0) * activityEmissionFactors['Gasoline'];
-    totalEmissions += (document.getElementById('naturalGas').value || 0) * activityEmissionFactors['NaturalGas'];
-    totalEmissions += (document.getElementById('coalElectricity').value || 0) * activityEmissionFactors['CoalElectricity'];
 
     // Process extra activities
     if (extraActivities) {

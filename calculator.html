@@ -38,24 +38,18 @@
     <div class="calculator__container">
         <h1>Carbon Emission Calculator</h1>
         <form id="emissionForm">
-            <label for="transport">Transport (miles per week):</label>
-            <input type="number" id="transport" name="transport" required>
-
-            <label for="food">Food (meals per week):</label>
-            <input type="number" id="food" name="food" required>
-
-            <label for="homeHeating">Home Heating (hours per week):</label>
-            <input type="number" id="homeHeating" name="homeHeating" placeholder="Hours of heating" required>
-
-            <label for="gasoline">Gasoline (liters per week):</label>
-            <input type="number" id="gasoline" name="gasoline" placeholder="Liters of gasoline" required>
-
-            <label for="naturalGas">Natural Gas (therms per week):</label>
-            <input type="number" id="naturalGas" name="naturalGas" placeholder="Therms of natural gas" required>
-
-            <label for="coalElectricity">Coal Electricity (kWh per week):</label>
-            <input type="number" id="coalElectricity" name="coalElectricity" placeholder="kWh from coal" required>
-
+            <label for="transport">Transport Miles (mandatory):</label>
+            <input type="number" id="transport" required>
+            
+            <label for="food">Food Meals (optional):</label>
+            <input type="number" id="food">
+            
+            <label for="homeHeating">Home Heating (optional):</label>
+            <input type="number" id="homeHeating">
+            
+            <label for="gasoline">Gasoline (optional):</label>
+            <input type="number" id="gasoline">
+        
             <div id="extraActivities">
                 <label for="extra">Extra Activities (e.g., flights, etc.):</label>
                 <input type="text" id="extra" name="extra" placeholder="Activity, emissions...">
